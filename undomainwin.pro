@@ -27,11 +27,13 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         undomainwin.cpp \
-    adjustcolors.cpp
+    adjustcolors.cpp \
+    mirrorpixels.cpp
 
 HEADERS += \
         undomainwin.h \
-    adjustcolors.h
+    adjustcolors.h \
+    mirrorpixels.h
 
 FORMS += \
         undomainwin.ui

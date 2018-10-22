@@ -2,6 +2,7 @@
 #include "undomainwin.h"
 #include "ui_undomainwin.h"
 #include "adjustcolors.h"
+#include "mirrorpixels.h"
 
 UndoMainWin::UndoMainWin(QWidget *parent) :
     QMainWindow(parent),
@@ -92,7 +93,7 @@ void UndoMainWin::on_actionAdjust_Color_triggered()
 
 void UndoMainWin::on_actionQuit_triggered()
 {
-        QApplication::quit();
+    QApplication::quit();
 }
 
 void UndoMainWin::on_actionUndo_The_Last_Action_triggered()
@@ -103,12 +104,16 @@ void UndoMainWin::on_actionUndo_The_Last_Action_triggered()
 
 void UndoMainWin::on_actionMirror_Pixels_Horizontal_triggered()
 {
-
+    MirrorPixels* mp = new MirrorPixels(m_Image, true);
+    m_Stack.push(mp);
+    displayImage(m_Image);
 }
 
 void UndoMainWin::on_actionMirror_Pixels_Vertical_triggered()
 {
-
+    MirrorPixels* mp = new MirrorPixels(m_Image, false);
+    m_Stack.push(mp);
+    displayImage(m_Image);
 }
 
 void UndoMainWin::on_actionRedo_The_Last_Action_triggered()
