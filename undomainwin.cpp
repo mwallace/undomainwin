@@ -3,6 +3,7 @@
 #include "ui_undomainwin.h"
 #include "adjustcolors.h"
 #include "mirrorpixels.h"
+#include "greyscale.h"
 
 UndoMainWin::UndoMainWin(QWidget *parent) :
     QMainWindow(parent),
@@ -63,6 +64,11 @@ void UndoMainWin::on_adjustColorButton_clicked()
     on_actionAdjust_Color_triggered();
 }
 
+void UndoMainWin::on_grayscaleButton_clicked()
+{
+    on_actionGrayscale_triggered();
+}
+
 void UndoMainWin::on_actionOpen_triggered()
 {
     m_Image.load(QFileDialog::getOpenFileName());
@@ -121,3 +127,13 @@ void UndoMainWin::on_actionRedo_The_Last_Action_triggered()
     m_Stack.redo();
     displayImage(m_Image);
 }
+
+void UndoMainWin::on_actionGrayscale_triggered()
+{
+
+    Greyscale* grey = new Greyscale(m_Image);
+    m_Stack.push(grey);
+    displayImage(m_Image);
+}
+
+

@@ -28,12 +28,14 @@ SOURCES += \
         main.cpp \
         undomainwin.cpp \
     adjustcolors.cpp \
-    mirrorpixels.cpp
+    mirrorpixels.cpp \
+    greyscale.cpp
 
 HEADERS += \
         undomainwin.h \
     adjustcolors.h \
-    mirrorpixels.h
+    mirrorpixels.h \
+    greyscale.h
 
 FORMS += \
         undomainwin.ui

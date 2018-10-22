@@ -41,6 +41,10 @@ private slots:
 
     void on_actionRedo_The_Last_Action_triggered();
 
+    void on_actionGrayscale_triggered();
+
+    void on_grayscaleButton_clicked();
+
 private:
     void displayImage(const QImage &img);
     Ui::UndoMainWin *ui;

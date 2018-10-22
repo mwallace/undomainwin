@@ -162,6 +162,13 @@
         </widget>
        </item>
        <item>
+        <widget class="QPushButton" name="grayscaleButton">
+         <property name="text">
+          <string>Grayscale</string>
+         </property>
+        </widget>
+       </item>
+       <item>
         <layout class="QFormLayout" name="formLayout">
          <item row="1" column="0">
           <widget class="QLabel" name="blueLabel">
@@ -339,6 +346,14 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionGrayscale">
+   <property name="text">
+    <string>Grayscale</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
    </property>
   </action>
  </widget>
