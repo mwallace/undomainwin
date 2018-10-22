@@ -26,10 +26,12 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        undomainwin.cpp
+        undomainwin.cpp \
+    adjustcolors.cpp
 
 HEADERS += \
-        undomainwin.h
+        undomainwin.h \
+    adjustcolors.h
 
 FORMS += \
         undomainwin.ui
