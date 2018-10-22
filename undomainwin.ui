@@ -333,6 +333,14 @@
     <string>Ctrl+U</string>
    </property>
   </action>
+  <action name="actionRedo_The_Last_Action">
+   <property name="text">
+    <string>Redo The Last Action</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

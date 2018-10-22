@@ -39,6 +39,8 @@ private slots:
     void on_actionMirror_Pixels_Horizontal_triggered();
     void on_actionMirror_Pixels_Vertical_triggered();
 
+    void on_actionRedo_The_Last_Action_triggered();
+
 private:
     void displayImage(const QImage &img);
     Ui::UndoMainWin *ui;
